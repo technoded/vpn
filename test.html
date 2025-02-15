@@ -1,0 +1,58 @@
+<style>
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+</style>
+<body>
+
+<div class="content">
+  <!-- Page content -->
+
+<br><link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.22.0">
+<form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
+
+    <div class="ym-products ym-display-none">
+    <div class="ym-block-title ym-products-title">Товары</div>
+
+    <div class="ym-product">
+            <div class="ym-product-line">
+                <span class="ym-product-description"><span class="ym-product-count">1×</span>Удаленная настройка сервера (VPN, DNS, WEB)</span>
+                <span class="ym-product-price" data-price="350" data-id="75" data-count="1">350,00&nbsp;₽</span>
+            </div>
+            
+        <input disabled="" type="hidden" name="text" value="Удаленная настройка сервера (VPN, DNS, WEB)"><input disabled="" type="hidden" name="price" value="350"><input disabled="" type="hidden" name="quantity" value="1"><input disabled="" type="hidden" name="paymentSubjectType" value="service"><input disabled="" type="hidden" name="paymentMethodType" value="full_payment"><input disabled="" type="hidden" name="tax" value="1"></div></div>
+    <input value="" type="hidden" name="ym_merchant_receipt">
+
+    <div class="ym-customer-info">
+        <div class="ym-block-title">Введите действующий E-mail, на него поступит чек и ссылка для подключения.</div>
+        <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">
+        
+        
+        
+        
+        
+    </div>
+
+    <div class="ym-hidden-inputs">
+       
+       
+       
+    </div>
+
+    
+    
+    <div class="ym-payment-btn-block ym-before-line ym-align-space-between">
+        <div class="ym-input-icon-rub ym-display-none">
+            <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number" step="any" value="350">
+        </div>
+        <button data-text="Заплатить" class="ym-btn-pay ym-result-price"><span class="ym-text-crop">Купить</span> <span class="ym-price-output">350,00&nbsp;₽</span></button><img src="https://yookassa.ru/integration/simplepay/img/iokassa-gray.svg?v=1.22.0" class="ym-logo" width="114" height="27" alt="ЮKassa">
+    </div>
+<input name="shopId" type="hidden" value="1025243"></form>
+<script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js?v=1.22.0"></script>
+
+
+</div>
+
+</body>
+</html>
