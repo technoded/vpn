@@ -20,6 +20,22 @@
     display: table;
     clear: both;
 }
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
@@ -43,8 +59,7 @@
 
 <div class="row">
   <div class="column" style="background-color:#aaa;">
-    <h3>1 месяц</h3>
-    <p>Some text..Some text..Some text..Some text..Some text..</p>
+    <button class="block">Block Button</button>
   </div>
   <div class="column" style="background-color:#bbb;">
     <h2>Column 2</h2>
