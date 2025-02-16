@@ -1,7 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+
 <style>
 .content {
     max-width: 600px;
     margin: auto;
+}
+
+body {
+    font-family: Arial;
+    color: var(--tg-theme-text-color);
+    textColor: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
 }
 * {
     box-sizing: border-box;
@@ -22,25 +34,27 @@
 .btn {
     width: 100%;
     border: none; /* Remove borders */
-    color: white; /* Add a text color */
+    color: var(--tg-theme-button-text-color);
+    textColor: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
     padding: 7px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
 
-.success {background-color: #1b92d1;}
+/* .success {background-color: #1b92d1;}
 .success:hover {background-color: #33ff00;}
 
-.info {background-color: #37afe2;} /* Blue */
+.info {background-color: #37afe2;} 
 .info:hover {background: #33ff00;}
 
-.warning {background-color: #1b92d1;} /* Orange */
+.warning {background-color: #1b92d1;}
 .warning:hover {background: #33ff00;}
 
-.danger {background-color: #37afe2;} /* Red */
+.danger {background-color: #37afe2;}
 .danger:hover {background: #33ff00;}
 
-.default {background-color: #e7e7e7; color: black;} /* Gray */
-.default:hover {background: #33ff00;}
+.default {background-color: #e7e7e7; color: black;} 
+.default:hover {background: #33ff00;} */
 
 
 
@@ -48,7 +62,11 @@
 
 	
 </style>
+</head>
+
+	
 <body>
+	<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
 
 <div class="content">
   <!-- Page content -->
