@@ -1,58 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+
 <style>
+	
 .content {
     max-width: 600px;
     margin: auto;
 }
+
+body {
+    font-family: Arial;
+    color: var(--tg-theme-text-color);
+    textColor: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+	
 * {
     box-sizing: border-box;
 }   
-/* Create four equal columns that floats next to each other */
+
 .column {
     float: left;
     width: 25%;
     padding: 10px;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+	
 .btn {
     width: 100%;
     border: none; /* Remove borders */
-    color: white; /* Add a text color */
+    color: var(--tg-theme-button-text-color);
+    textColor: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
     padding: 7px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
-}
-
-.success {background-color: #1b92d1;}
-.success:hover {background-color: #33ff00;}
-
-.info {background-color: #37afe2;} /* Blue */
-.info:hover {background: #33ff00;}
-
-.warning {background-color: #1b92d1;} /* Orange */
-.warning:hover {background: #33ff00;}
-
-.danger {background-color: #37afe2;} /* Red */
-.danger:hover {background: #33ff00;}
-
-.default {background-color: #e7e7e7; color: black;} /* Gray */
-.default:hover {background: #33ff00;}
-
-
-
-
-
-	
+}	
 </style>
+</head>
 <body>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
 
 <div class="content">
   <!-- Page content -->
- <br><link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.22.0">
+	
+<div class="row">
+    <a href="https://technoded.github.io/EasyRay/index.html">
+                <button class="btn success">Назад</button>
+          </div>
+    </a>
+	
+    <br><link rel="stylesheet" href="https://yookassa.ru/integration/simplepay/css/yookassa_construct_form.css?v=1.22.0">
 <form class="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8" >
 
     <div class="ym-products ym-display-none">
@@ -68,17 +73,13 @@
     <input value="" type="hidden" name="ym_merchant_receipt">
 
     <div class="ym-customer-info">
-        <div class="ym-block-title">
+        <<div class=textColor: var(--tg-theme-text-color)>
 		
-		<p><h5>Укажите действующий E-mail, на него поступит сообщение с чеком, а также ссылка и QR код для доступа к VPN...</h5></p>
-		<p><h5>Внимание! В целях сохранности личных данных, держите в тайне и не сообщайте третьим лицам данные для подключения!</h5></p>
+		<p><h4>Укажите действующий E-mail, на него поступит сообщение с чеком, а также ссылка и QR код для доступа к VPN...</h4></p>
+		<p><h4>Внимание! В целях сохранности личных данных, держите в тайне и не сообщайте третьим лицам данные для подключения!</h4></p>
 		
 		</div>
-        <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">
-        
-        
-        
-        
+        <input name="cps_email" class="ym-input" placeholder="Email" type="text" value="">   
         
     </div>
 
@@ -88,8 +89,6 @@
        
     </div>
 
-    
-    
     <div class="ym-payment-btn-block ym-before-line ym-align-space-between">
         <div class="ym-input-icon-rub ym-display-none">
             <input name="sum" placeholder="0.00" class="ym-input ym-sum-input ym-required-input" type="number" step="any" value="1500">
@@ -98,21 +97,11 @@
     </div>
 <input name="shopId" type="hidden" value="1025243"></form>
 <script src="https://yookassa.ru/integration/simplepay/js/yookassa_construct_form.js?v=1.22.0"></script>
- 
+	<br>
+	<br>
 
-	<p><h3> </h3></p>
-	<p><h3> </h3></p>
-	<p><h3> </h3></p>
-	<br>
-	<br>
-<div class="row">
-    <a href="https://technoded.github.io/EasyRay/index.html">
-                <button class="btn success">Назад</button>
-          </div>
-    </a>
 </div>
     
- 
 </div>
 
 </body>
