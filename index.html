@@ -1,69 +1,99 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адаптивный сайт</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    color: var(--tg-theme-text-color);
+    textColor: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 2px;
+}
 
-        header {
-            background-color: #4CAF50;
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn {
+    width: 100%;
+    border: none; /* Remove borders */
+    color: var(--tg-theme-button-text-color);
+    textColor: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
+    padding: 8px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
 
-        button {
-            background-color: #fff;
-            color: #4CAF50;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
 
-        button:hover {
-            background-color: #ddd;
-        }
 
-        main {
-            padding: 20px;
-        }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column  {
+        width: 50%;
+    }
+}
 
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                align-items: stretch;
-            }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
+}
 
-            button {
-                margin: 5px 0;
-                width: 100%;
-            }
+.content {
+            max-width: 700px;
+            margin: 10px auto;
         }
-    </style>
+	
+</style>
 </head>
 <body>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+<div class="row">
+    <a href="https://technoded.github.io/EasyRay/index.html">
+          <div class="column">
+                <button class="btn success">VLESS Info</button>
+          </div>
+    </a>
+  <a href="https://technoded.github.io/EasyRay/index.html">
+          <div class="column">
+                <button class="btn success">xRay Info</button>
+          </div>
+    </a>
 
-<header>
-    <button>Кнопка 1</button>
-    <button>Кнопка 2</button>
-    <button>Кнопка 3</button>
-    <button>Кнопка 4</button>
-</header>
+    <a href="https://technoded.github.io/EasyRay/index.html">
+          <div class="column">
+                <button class="btn success">Список приложений</button>
+          </div>
+    </a>
 
-<main>
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <p>Это пример адаптивной веб-страницы с кнопками в шапке.</p>
-</main>
+    <a href="https://technoded.github.io/EasyRay/index.html">
+          <div class="column">
+                <button class="btn success">Установка</button>
+          </div>
+    </a>
+</div>
+<div class="content">
+<h3>Заголовок</h3>
+<p>— Скорость - до 1 Гб/сек...</b></p>
+<p>— 1000 Гб трафика в месяц без потери скорости...</b></p>
+<p>— Неограниченное количество устройств...</b></p>
+<p>— Отсутствие блокировок. Доступ в Instagram, Facebook, YouTube(1080p без лагов:))</b></p>
+</div>
 
+
+	
 </body>
 </html>
